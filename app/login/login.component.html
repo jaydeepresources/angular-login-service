@@ -1,0 +1,14 @@
+<br>
+<div class="container">
+  <input type="text" name="email" placeholder="enter email" [(ngModel)]="email">
+  <input type="password" name="password" placeholder="enter password" [(ngModel)]="password">
+  <button class="btn btn-primary" (click)="login()">login</button>
+
+  <p class="lead text-success" *ngIf = "log.loginStatus == 1">
+    Login Status: Success
+  </p>
+  <p class="lead text-danger" *ngIf = "log.loginStatus == 0">
+    Login Status: Failed
+  </p>
+
+</div>
